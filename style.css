@@ -1,0 +1,1722 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+}
+/***********************
+****Header
+************************/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header .logo {
+  padding: 1rem 3rem;
+}
+header .logo img {
+  width: 10rem;
+}
+header .menu {
+  display: none;
+}
+header .right-nav {
+  padding: 1rem 5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+header .right-nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 16px;
+}
+header .right-nav img.course {
+  padding: 0px 10px;
+}
+/*******************************
+********Media Screen
+*********************************/
+@media only screen and (max-width: 600px) {
+  header .logo {
+    padding: 1rem;
+  }
+  header .right-nav {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  header .right-nav {
+    padding: 1rem 3rem;
+  }
+}
+/*********************************************
+****Main
+***********************************************/
+main .landing-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem;
+  font-family: "Avenir";
+  flex-wrap: wrap;
+  gap: 5rem;
+  align-items: center;
+}
+main .landing-container .pay-after {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+main .landing-container .pay-after p {
+  font-size: 4rem;
+  font-weight: 500;
+}
+main .landing-container .access-to-mentors {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main .landing-container .access-to-mentors span {
+  color: #00abae;
+  font-weight: 800;
+  font-size: 2rem;
+}
+main .landing-container .available-slots {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .landing-container .available-slots button {
+  padding: 1rem 2rem;
+  background-color: #00abae;
+  color: #fff;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 5px;
+}
+main .landing-container .available-slots .we-work {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .landing-container .available-slots img.play {
+  width: 3rem;
+}
+main .landing-container .available-slots a {
+  color: #000;
+  font-weight: 600;
+}
+main .landing-container .pic-container {
+  position: relative;
+  z-index: 0;
+}
+main .landing-container .pic-container .image-container {
+  width: 30rem;
+  height: 37rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem 0rem 11rem 1rem;
+  margin: 3rem 0rem;
+}
+main .landing-container .pic-container img {
+  width: 95%;
+  position: absolute;
+  z-index: 10;
+  left: 2rem;
+  top: 2rem;
+}
+/***************************
+***Media Screen
+****************************/
+@media only screen and (max-width: 600px) {
+  main .landing-container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 0rem 1rem;
+    gap: 1rem;
+  }
+    main .landing-container .pic-container .image-container  {
+      width: 20rem;
+      height: 25rem;
+      margin: 0;
+    }
+  main .landing-container .pay-after {
+    padding: 1rem 0rem;
+    text-align: center;
+    gap: 1rem;
+  }
+  main .landing-container .pay-after p {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  main .landing-container .pic-container img {
+    width: 90%;
+    top: -1rem;
+  }
+  main .landing-container .available-slots {
+    flex-direction: column;
+    padding: 0rem;
+    gap: 1rem;
+    width: 90%;
+  }
+  main .landing-container .access-to-mentors {
+    gap: 0;
+  }
+  main .landing-container .access-to-mentors span {
+    font-size: 1rem;
+  }
+  main .landing-container .available-slots button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+  } 
+  main .landing-container .available-slots img.play {
+    width: 5rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .landing-container .pay-after {
+    padding: 1rem 2rem;
+  }
+  main .landing-container .pic-container .image-container {
+    width: 40rem;
+    height: 46rem;
+  }
+  main .landing-container .pic-container img {
+    width: 90%;
+    left: 5rem;
+    top: 0rem;
+  }
+}
+/******************************************
+***Lauch Careers
+********************************************/
+main .launch-career {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
+}
+main .launch-career .industry {
+  padding: 0rem 2rem;
+}
+main .launch-career .industry p {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+main .launch-career .companies {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .launch-career .companies img {
+  width: 210px;
+}
+/***************************
+***Media Screen
+****************************/
+@media only screen and (max-width: 600px) {
+  main .launch-career .industry p {
+    font-size: 2rem;
+  }
+  main .launch-career .companies {
+    padding: 1rem 2rem;
+  }
+  main .launch-career .companies img {
+    width: 100px;
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .launch-career {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+/***************************
+***High_growth
+****************************/
+main .high-growth {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 0rem 8rem 0rem 0rem;
+  position: relative;
+}
+main .high-growth .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+main .high-growth .dots img {
+  width: 5%;
+}
+main .high-growth .high-growth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 2rem;
+  padding: 1rem 0rem;
+}
+main .high-growth .high-growth-container .salary {
+  position: relative;
+  z-index: 0;
+  padding: 1rem 3rem;
+}
+main .high-growth .high-growth-container .salary .border-container {
+  width: 40rem;
+  height: 40rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem 0rem 1rem 9rem;
+  padding: 1rem;
+}
+main .high-growth .high-growth-container .salary img {
+  width: 90%;
+  position: absolute;
+  z-index: 10;
+  left: 4rem;
+  top: 0.5rem;
+}
+main .high-growth .high-growth-container .growth-career {
+  padding: 0rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .high-growth .high-growth-container .growth-career span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+main .high-growth .high-growth-container .growth-career p {
+  font-size: 20px;
+  font-family: "Roboto";
+}
+main .high-growth .high-growth-container .growth-career button {
+  width: 50%;
+  padding: 1rem 2rem;
+  background-color: #00abae;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+main .high-growth .bottom-dots {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+}
+main .high-growth .bottom-dots img {
+  width: 60%;
+}
+/********************************
+**********Media Screeb
+**********************************/
+@media only screen and (max-width: 600px) {
+  main .high-growth {
+    border-radius: 0rem 5rem 0rem 0rem;
+  }
+   main .high-growth .high-growth-container {
+     flex-direction: column;
+   }
+  main .high-growth .high-growth-container .growth-career {
+    padding: 0rem 1rem;
+    gap: 1rem;
+  }
+  main .high-growth .dots {
+    justify-content: flex-end;
+    padding: 1rem 5rem;
+  }
+  main .high-growth .dots img {
+    width: 10%;
+  }
+  main .high-growth .high-growth-container .salary {
+    padding: 1rem;
+  }
+  main .high-growth .high-growth-container .salary .border-container {
+    width: 20rem;
+    height: 17rem;
+    border-radius: 1rem 0rem 1rem 5rem;
+  }
+  main .high-growth .high-growth-container .salary img {
+    left: 2rem;
+    width: 90%;
+    top: -0.5rem;
+  }
+  main .high-growth .high-growth-container .growth-career span {
+    font-size: 2.5rem;
+  }
+  /* main .high-growth .high-growth-container .growth-career p {
+    font-size: 15px;
+  } */
+  main .high-growth .high-growth-container .growth-career button {
+    width: 80%;
+    font-size: 20px;
+  }
+  main .high-growth .bottom-dots {
+    right: 0;
+    bottom: 2%;
+    left: 85%;
+  }
+  main .high-growth .bottom-dots img {
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .high-growth .high-growth-container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  main .high-growth .high-growth-container .salary .border-container {
+    width: 40rem;
+    height: 37rem;
+  }
+  main .high-growth .bottom-dots {
+    bottom: 2%;
+  }
+  main .high-growth .high-growth-container .growth-career a img {
+    width: 65%;
+  }
+}
+/*************************************
+***No Tution Fee
+***************************************/
+main .no-tution-fee {
+  background-image: url(img/waveElements.svg);
+  background-position: 800px -100px;
+  background-repeat: repeat-x;
+}
+main .no-tution-fee .no-tution-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+main .no-tution-fee .no-tution-container .hired {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main .no-tution-fee .no-tution-container .hired span {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+main .no-tution-fee .no-tution-container .hired p {
+  font-size: 15px;
+  font-weight: 400;
+}
+main .no-tution-fee .no-tution-container .hired .menu .payment-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #929c9e;
+  margin-bottom: 1rem;
+}
+main .no-tution-fee .no-tution-container .hired .menu .payment-plan p {
+  font-weight: 400;
+  padding: 1rem 1rem;
+  margin: 0;
+  font-size: 15px;
+}
+main .no-tution-fee .no-tution-container .hired .menu .payment-plan span {
+  font-weight: 400;
+  padding: 0rem 1rem;
+}
+main .no-tution-fee .no-tution-container .hired .slot button {
+  width: 35%;
+  padding: 1rem 2rem;
+  background-color: #00abae;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+}
+main .no-tution-fee .no-tution-container .boy {
+  position: relative;
+  z-index: 0;
+  padding: 1rem 3rem;
+}
+main .no-tution-fee .no-tution-container .boy .border-container {
+  width: 35rem;
+  height: 37rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem 0rem 9rem 1rem;
+  padding: 1rem;
+}
+main .no-tution-fee .no-tution-container .boy img {
+  width: 85%;
+  position: absolute;
+  z-index: 10;
+  right: 2rem;
+  top: 0rem;
+}
+/*********************************
+******Media Screen
+**********************************/
+@media only screen and (max-width: 600px) {
+  main .no-tution-fee {
+    background-image: none;
+  }
+  main .no-tution-fee .no-tution-container {
+    flex-direction: column-reverse;
+  }
+  main .no-tution-fee .no-tution-container .hired {
+    padding: 1rem 1rem;
+    gap:1rem;
+  }
+  main .no-tution-fee .no-tution-container .hired span {
+    font-size: 2.5rem;
+  }
+  main .no-tution-fee .no-tution-container .hired p {
+    margin: 1rem 0rem;
+    font-size: 20px;
+  }
+  main .no-tution-fee .no-tution-container .boy {
+    padding: 0rem 1rem;
+  }
+  main .no-tution-fee .no-tution-container .boy .border-container {
+    width: 20rem;
+    height: 19rem;
+    border-radius: 1rem 0rem 7rem 1rem;
+  }
+  main .no-tution-fee .no-tution-container .boy img {
+    left: 2.5rem;
+    width: 85%;
+    top: -1rem;
+  }
+  main .no-tution-fee .no-tution-container .hired .slot button{
+    width: 90%;
+    padding: 1rem;
+    font-size: 25px;
+  }
+  main .no-tution-fee .no-tution-container .hired .menu .payment-plan p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .no-tution-fee {
+    background-image: none;
+  }
+  main .no-tution-fee .no-tution-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .no-tution-fee .no-tution-container .hired {
+    width: 80%;
+  }
+  main .no-tution-fee .no-tution-container .hired span {
+    font-size: 2.5rem;
+  }
+  main .no-tution-fee .no-tution-container .hired p {
+    font-size: 13px;
+  }
+  main .no-tution-fee .no-tution-container .boy .border-container {
+    width: 40rem;
+    height: 40rem;
+  }
+  main .no-tution-fee .no-tution-container .hired .slot img {
+    width: 60%;
+  }
+}
+/************************************************
+*****Flexible
+**************************************************/
+main .features {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 3rem 0rem 0rem 0rem;
+}
+main .features .heading {
+  text-align: center;
+  padding: 3rem 0rem;
+  font-size: 2rem;
+}
+main .features .heading span {
+  color: #00abae;
+}
+main .features .features-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 2rem;
+  flex-wrap: wrap;
+}
+main .features .features-container .support {
+  position: relative;
+  z-index: 0;
+}
+main .features .features-container .support .support-border {
+  width: 25rem;
+  height: 30rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem;
+}
+main .features .features-container .support .support-content {
+  width: 95%;
+  height: 90%;
+  position: absolute;
+  z-index: 10;
+  left: 1rem;
+  top: -1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+}
+main .features .features-container .support .support-content .support-heading {
+  color: #00abae;
+}
+main .features .features-container .support .support-content .support-image {
+  width: 95%;
+  padding: 0rem 1rem;
+}
+main
+  .features
+  .features-container
+  .support
+  .support-content
+  .support-image
+  img {
+  width: 100%;
+}
+main .features .features-container .support .support-content .support-text {
+  padding: 1rem;
+  font-size: 15px;
+  line-height: 20px;
+}
+/********************************************
+*****Our Courses
+**********************************************/
+@media only screen and (max-width: 600px) {
+  main .features .features-container {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  main .features .features-container .support .support-border {
+    width: 20rem;
+    height: 30rem;
+    margin-bottom: 3rem;
+  }
+  main .features .features-container .support .support-content {
+    width: 90%;
+    height: 85%;
+  }
+  main .features .features-container .support .support-content .support-text  {
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .features .features-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  main .features .features-container .support {
+    width: 80%;
+  }
+  main .features .features-container .support .support-border {
+    width: 40rem;
+    height: 40rem;
+  }
+  main .features .features-container .support .support-content {
+    left: 3rem;
+  }
+}
+/********************************************
+*****Our Courses
+**********************************************/
+main .our-courses {
+  margin: 2rem 0rem;
+}
+main .our-courses .course-heading {
+  text-align: center;
+  padding: 4rem 0rem;
+  font-size: 2rem;
+}
+main .our-courses .course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+main .our-courses .course-container .web-dev {
+  position: relative;
+  z-index: 0;
+}
+main .our-courses .course-container .web-dev .web-dev-border {
+  width: 30rem;
+  height: 40rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem;
+}
+main .our-courses .course-container .web-dev .web-dev-content {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  z-index: 10;
+  left: 2rem;
+  top: -1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  gap: 1rem;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .web-dev-logo
+  img {
+  width: 100px;
+}
+main .our-courses .course-container .web-dev .web-dev-content .web-dev-heading {
+  text-align: center;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .web-dev-heading
+  h2 {
+  font-size: 35px;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .web-dev-heading
+  p {
+  font-size: 20px;
+  color: #929c9e;
+  padding: 1rem 0rem 0rem 0rem;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .web-dev-details
+  ul {
+  color: #929c9e;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .web-dev-details
+  ul
+  li {
+  padding: 0.5rem;
+  font-size: 20px;
+}
+main
+  .our-courses
+  .course-container
+  .web-dev
+  .web-dev-content
+  .learn-more
+  button {
+  padding: 1rem 2rem;
+  background-color: #00abae;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+/********************************************
+*****Media Screen
+**********************************************/
+@media only screen and (max-width: 600px) {
+  main .our-courses .course-container {
+    gap: 3rem;
+  }
+  main .our-courses .course-container .web-dev .web-dev-border {
+    width: 18rem;
+    height: 42rem;
+    margin-bottom: 3rem;
+  }
+  main .our-courses .course-container .web-dev .web-dev-content {
+    width: 87%;
+    top: -2rem;
+    left: 2rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .our-courses .course-container {
+    gap: 3rem;
+  }
+  main .our-courses .course-container .web-dev .web-dev-border {
+    width: 40rem;
+  }
+}
+/*********************************************
+****Data Science
+***********************************************/
+main .our-courses .course-container .data-science {
+  position: relative;
+  z-index: 0;
+}
+main .our-courses .course-container .data-science .ds-border {
+  width: 30rem;
+  height: 40rem;
+  box-sizing: border-box;
+  border: 1.5px solid #00abae;
+  border-radius: 1rem;
+}
+main .our-courses .course-container .data-science .ds-content {
+  width: 95%;
+  height: fit-content;
+  position: absolute;
+  z-index: 10;
+  right: 2rem;
+  top: -1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  gap: 1rem;
+  border-radius: 10px;
+}
+main .our-courses .course-container .data-science .ds-content .ds-logo img {
+  width: 100px;
+}
+main .our-courses .course-container .data-science .ds-content .ds-heading {
+  text-align: center;
+}
+main .our-courses .course-container .data-science .ds-content .ds-heading h2 {
+  font-size: 40px;
+}
+main .our-courses .course-container .data-science .ds-content .ds-heading p {
+  font-size: 20px;
+  color: #929c9e;
+  padding: 1rem 0rem 0rem 0rem;
+}
+main .our-courses .course-container .data-science .ds-content .ds-details ul {
+  color: #929c9e;
+}
+main
+  .our-courses
+  .course-container
+  .data-science
+  .ds-content
+  .ds-details
+  ul
+  li {
+  padding: 0.5rem;
+  font-size: 20px;
+}
+main
+  .our-courses
+  .course-container
+  .data-science
+  .ds-content
+  .learn-more
+  button {
+  padding: 1rem 2rem;
+  background-color: #00abae;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+/************************************************
+*********Media Screen
+*************************************************/
+@media only screen and (max-width: 600px) {
+  main .our-courses .course-container .data-science .ds-border {
+    width: 18rem;
+    height: 42rem;
+    margin: 0rem 1rem 2rem 1rem;
+  }
+  main .our-courses .course-container .data-science .ds-content {
+    width: 80%;
+    top: -2rem;
+    right: 2.5rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .our-courses .course-container .data-science .ds-border {
+    width: 40rem;
+  }
+}
+/************************************************
+****Curators
+**************************************************/
+main .curators {
+  background-image: url(img/waveElements.svg);
+  background-position: 800px -700px;
+  background-repeat: no-repeat;
+  margin: 2rem 0rem;
+  position: relative;
+}
+main .curators .heading {
+  text-align: center;
+  padding: 3rem 0rem;
+  font-size: 2rem;
+}
+main .curators .curator-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .curators .curator-container .alex {
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  width: 40%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+main .curators .curator-container .alex .alex-details {
+  display: flex;
+  gap: 1rem;
+}
+main .curators .curator-container .alex .alex-details img {
+  width: 40%;
+  padding: 1rem;
+}
+main .curators .curator-container .alex .alex-details .alex-heading {
+  padding: 2rem 0rem;
+}
+main .curators .curator-container .alex .alex-details .alex-heading h1 {
+  font-size: 30px;
+  padding: 1rem 0rem;
+}
+main .curators .curator-container .alex .alex-details .alex-heading p {
+  color: #929c9e;
+  font-size: 19px;
+}
+main .curators .curator-container .alex .experience {
+  padding: 0rem 1rem;
+  line-height: 30px;
+}
+main .curators .curator-container .barhan {
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  width: 40%;
+  height: 450px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+main .curators .curator-container .barhan .barhan-details {
+  display: flex;
+  gap: 1rem;
+}
+main .curators .curator-container .barhan .barhan-details img {
+  width: 40%;
+  padding: 1rem;
+}
+main .curators .curator-container .barhan .barhan-details .barhan-heading {
+  padding: 2rem 0rem;
+}
+main .curators .curator-container .barhan .barhan-details .barhan-heading h1 {
+  font-size: 30px;
+  padding: 1rem 0rem;
+}
+main .curators .curator-container .barhan .barhan-details .barhan-heading p {
+  color: #929c9e;
+  font-size: 19px;
+}
+main .curators .curator-container .barhan .experience {
+  padding: 2rem 1rem 4rem 1rem;
+  line-height: 30px;
+}
+/************************************************
+*******Media Screen
+**************************************************/
+@media only screen and (max-width: 600px) {
+  main .curators {
+    background-image: none;
+    margin: 0;
+  }
+  main .curators .heading {
+    padding: 1rem;
+  }
+  main .curators .curator-container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main .curators .curator-container .alex {
+    width: 90%;
+    height: 100%;
+    gap: 0rem;
+  }
+  main .curators .curator-container .alex .alex-details {
+    flex-direction: column;
+  }
+  main .curators .curator-container .alex .alex-details img {
+    width: 90%;
+  }
+  main .curators .curator-container .alex .alex-details .alex-heading {
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  main .curators .curator-container .alex .experience {
+    padding: 1rem;
+  }
+  main .curators .curator-container .barhan {
+    width: 90%;
+    height: 100%;
+  }
+  main .curators .curator-container .barhan .barhan-details {
+    flex-direction: column;
+  }
+  main .curators .curator-container .barhan .barhan-details img {
+    width: 90%;
+  }
+  main .curators .curator-container .barhan .barhan-details .barhan-heading {
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  main .curators .curator-container .barhan .experience {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .curators .curator-container .alex {
+    width: 95%;
+    height: 100%;
+  }
+  main .curators .curator-container .barhan {
+    width: 95%;
+  }
+  main .curators .curator-container .alex .alex-details .alex-heading p {
+    font-size: 30px;
+  }
+  main .curators .curator-container .barhan .barhan-details .barhan-heading p {
+    font-size: 30px;
+  }
+}
+/************************************************
+*******Cirriculam
+**************************************************/
+main .curriculum {
+  margin: 2rem 0rem;
+}
+main .curriculum .heading {
+  text-align: center;
+  margin: 3rem 0rem;
+  font-size: 2rem;
+}
+main .curriculum .curriculum-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 2rem;
+}
+main .curriculum .curriculum-container .laptop {
+  position: relative;
+  z-index: 0;
+  padding: 2rem 3rem;
+}
+main .curriculum .curriculum-container .laptop .border-container {
+  width: 40rem;
+  height: 33rem;
+  border: 1px solid #00abae;
+  border-radius: 1rem 1rem 10rem 1rem;
+}
+main .curriculum .curriculum-container .laptop .image-box {
+  position: absolute;
+  top: 1rem;
+  width: 90%;
+  z-index: 10;
+  left: 4rem;
+}
+main .curriculum .curriculum-container .laptop .image-box img {
+  width: 100%;
+}
+main .curriculum .curriculum-container .job-ready {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+main .curriculum .curriculum-container .job-ready h2 {
+  font-size: 2rem;
+}
+main .curriculum .curriculum-container .job-ready span {
+  font-size: 25px;
+  font-weight: 500;
+}
+/**************************************************
+******Media Screen
+****************************************************/
+@media only screen and (max-width: 600px) {
+  main .curriculum .heading {
+    margin: 2rem 0rem;
+  }
+  main .curriculum .curriculum-container {
+    margin: 2rem 1rem;
+    flex-direction: column;
+  }
+  main .curriculum .curriculum-container .laptop {
+    padding: 2rem 0rem;
+  }
+  main .curriculum .curriculum-container .laptop .border-container {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem 1rem 5rem 1rem;
+  }
+  main .curriculum .curriculum-container .laptop .image-box {
+    left: 1rem;
+    height: auto;
+    width: 95%;
+  }
+  main .curriculum .curriculum-container .laptop .image-box img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .curriculum .curriculum-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 1rem;
+  }
+  main .curriculum .curriculum-container .laptop .border-container {
+    width: 40rem;
+    height: 30rem;
+  }
+}
+/**************************************************
+******Portfolio
+****************************************************/
+main .portfolio {
+  margin: 2rem 0rem;
+}
+main .portfolio .heading {
+  text-align: center;
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+main .portfolio .portfolio-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0rem;
+  padding: 0rem 3rem;
+  flex-wrap: wrap;
+  font-size: 20px;
+}
+main .portfolio .portfolio-container .food-valley {
+  position: relative;
+  text-align: center;
+}
+main .portfolio .portfolio-container .food-valley img {
+  width: 400px;
+}
+main .portfolio .portfolio-container .food-valley .image-1 {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  left: 2.5rem;
+}
+main .portfolio .portfolio-container .food-valley .image-2 {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 1rem;
+}
+main .portfolio .portfolio-container .food-valley .image-3 {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: -1rem;
+}
+main .portfolio .portfolio-container .money-counter {
+  position: relative;
+  text-align: center;
+}
+
+main .portfolio .portfolio-container .money-counter img {
+  width: 400px;
+}
+main .portfolio .portfolio-container .money-counter .image-1 {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  right: 0rem;
+}
+main .portfolio .portfolio-container .money-counter .image-2 {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 2rem;
+}
+main .portfolio .portfolio-container .money-counter .image-3 {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 4rem;
+}
+main .portfolio .portfolio-container .ecom {
+  position: relative;
+  text-align: center;
+}
+main .portfolio .portfolio-container .ecom img {
+  width: 400px;
+}
+main .portfolio .portfolio-container .ecom .image-1 {
+  position: relative;
+  z-index: 0;
+  top: 0;
+  right: 0rem;
+}
+main .portfolio .portfolio-container .ecom .image-2 {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  right: 2rem;
+}
+main .portfolio .portfolio-container .ecom .image-3 {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 4rem;
+}
+/**************************************************
+******Media Screen
+****************************************************/
+@media only screen and (max-width: 600px) {
+  main .portfolio .heading {
+    padding: 0;
+  }
+  main .portfolio .portfolio-container {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0rem 1rem;
+  }
+  main .portfolio .portfolio-container .food-valley img {
+    width: 270px;
+  }
+  main .portfolio .portfolio-container .money-counter img {
+    width: 270px;
+  }
+  main .portfolio .portfolio-container .ecom img {
+    width: 270px;
+  }
+  main .portfolio .portfolio-container .money-counter .image-1 {
+    left: 3rem;
+  }
+  main .portfolio .portfolio-container .money-counter .image-2 {
+    left: 1.5rem;
+  }
+  main .portfolio .portfolio-container .money-counter .image-3 {
+    left: -1rem;
+  }
+  main .portfolio .portfolio-container .ecom .image-1 {
+    left: 3rem;
+  }
+  main .portfolio .portfolio-container .ecom .image-2 {
+    left: 1.5rem;
+  }
+  main .portfolio .portfolio-container .ecom .image-3 {
+    left: -1rem;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .portfolio .portfolio-container {
+    justify-content: center;
+    gap: 6rem;
+  }
+}
+/*********************************************************
+********Future Skills
+**********************************************************/
+main .future-skills {
+  background-image: url(img/waveElements.svg);
+  background-position: -600px 50px;
+  background-repeat: no-repeat;
+  margin: 2rem 0rem;
+  position: relative;
+}
+main .future-skills .heading {
+  text-align: center;
+  padding: 2rem 0rem;
+  font-size: 1.5rem;
+}
+main .future-skills .skills-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 1rem;
+}
+main .future-skills .skills-container .critical-thinking {
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  height: 494px;
+  width: 190px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 10px;
+}
+main .future-skills .skills-container .critical-thinking .image {
+  margin: 1rem auto;
+  width: 190px;
+}
+main .future-skills .skills-container .critical-thinking .image img {
+  width: 100%;
+}
+main .future-skills .skills-container .critical-thinking .text {
+  text-align: center;
+}
+main .future-skills .skills-container .critical-thinking .text span {
+  color: #00abae;
+  font-weight: 450;
+  font-size: 1.2rem;
+}
+main .future-skills .skills-container .critical-thinking .details p {
+  font-size: 16px;
+  line-height: 28px;
+}
+/*********************************************************
+********Media Screen
+**********************************************************/
+@media only screen and (max-width: 600px) {
+  main .future-skills {
+    background-image: none;
+    margin: 0rem;
+  }
+  main .future-skills .heading {
+    padding: 2rem 0rem;
+    font-size: 15px;
+  }
+  main .future-skills .skills-container {
+    padding: 1rem;
+    flex-direction: column;
+  }
+  main .future-skills .skills-container .critical-thinking {
+    width: 90%;
+    margin-bottom: 2rem;
+    height: 515px;
+  }
+   main .future-skills .skills-container .critical-thinking .image {
+       width: 300px;
+   }
+  main .future-skills .skills-container .critical-thinking .image img {
+    width: 100%;
+    padding: 0;
+  }
+  main .future-skills .skills-container .critical-thinking .text span {
+    font-size: 25px;
+  }
+  main .future-skills .skills-container .critical-thinking .text p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .future-skills .skills-container {
+    gap: 2rem;
+    flex-direction: column;
+  }
+  main .future-skills .skills-container .critical-thinking {
+    width: 90%;
+    height: 100%;
+  }
+  main .future-skills .skills-container .critical-thinking .image {
+    width: 400px;
+  }
+  main .future-skills .skills-container .critical-thinking img {
+    width: 90%;
+  }
+  main .future-skills .skills-container .critical-thinking .text span  {
+    font-size: 4rem;
+  }
+  main .future-skills .skills-container .critical-thinking .details p  {
+    font-size: 30px;
+  }
+}
+/**********************************************************
+*********Alumini
+***********************************************************/
+main .alumini {
+  margin: 1rem;
+}
+main .alumini .heading {
+  text-align: center;
+  padding: 3rem 0rem;
+  font-size: 2rem;
+}
+main .alumini .heading span {
+  color: #00abae;
+}
+main .alumini .alumini-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  flex-wrap: wrap;
+}
+main .alumini .alumini-container .cinta {
+  position: relative;
+  width: 200px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+main .alumini .alumini-container .cinta .icon {
+  position: absolute;
+  top: -2.5rem;
+  right: 0rem;
+}
+main .alumini .alumini-container .cinta .image {
+  width: 190px;
+}
+main .alumini .alumini-container .cinta .image img {
+  width: 90%;
+}
+main .alumini .alumini-container .cinta .details {
+  text-align: center;
+}
+main .alumini .alumini-container .cinta .details h4 {
+  text-align: center;
+  color: #00abae;
+  padding: 0.5rem 0rem;
+  font-size: 1.5rem;
+}
+main .alumini .alumini-container .cinta .details span {
+  font-size: 15px;
+}
+main .alumini .alumini-container .cinta .details p {
+  padding: 1rem 0rem;
+  font-size: 15px;
+  line-height: 25px;
+}
+/**********************************************
+**********Media Screen
+***********************************************/
+@media only screen and (max-width: 600px) {
+  main .alumini {
+    margin: 0;
+  }
+  main .alumini .heading {
+    padding: 1rem 0rem;
+  }
+  main .alumini .alumini-container {
+    padding: 1rem 0rem;
+    flex-direction: column;
+  }
+  main .alumini .alumini-container .cinta {
+    width: 80%;
+    height: 100%;
+  }
+  main .alumini .alumini-container .cinta .icon {
+    top: -1.5rem;
+    right: 1rem;
+  }
+}
+/**********************************************
+**********Eligibility
+***********************************************/
+main .eligibility .heading {
+  text-align: center;
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+main .eligibility .eligibility-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90%;
+  background-color: #f4f4f4;
+ box-shadow: 0 0 5px 5px rgb(0 0 0 / 0.2);
+  margin: 1rem auto;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+main .eligibility .eligibility-container .text {
+  font-weight: 500;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+main .eligibility .eligibility-container .image {
+  width: 40%;
+  padding: 1rem 0rem 0rem 0rem;
+}
+main .eligibility .eligibility-container .image img {
+  width: 90%;
+}
+/***********************************************
+**********Media Screen
+************************************************/
+@media only screen and (max-width: 600px) {
+  main .eligibility .heading {
+    padding: 1rem 0rem;
+  }
+  main .eligibility .eligibility-container {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+  main .eligibility .eligibility-container .text {
+    padding: 2rem 1rem;
+  }
+  main .eligibility .eligibility-container .text {
+    font-size: 20px;
+  }
+  main .eligibility .eligibility-container .image {
+    width: 95%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  main .eligibility .eligibility-container .image img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  main .eligibility .eligibility-container {
+    justify-content: center;
+    width: 90%;
+  }
+}
+/***********************************************
+**********Book-Sessions
+************************************************/
+main .book-session {
+  margin: 2rem 0rem;
+}
+main .book-session .session-container {
+  background-color: #00abae;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .book-session .session-container .image {
+  width: 40%;
+}
+main .book-session .session-container .image img {
+  width: 90%;
+}
+main .book-session .session-container .booking-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  color: #fff;
+}
+main .book-session .session-container .booking-details span {
+  font-weight: 400;
+  font-size: 40px;
+}
+main .book-session .session-container .booking-details p {
+  font-size: 20px;
+}
+main .book-session .session-container .booking-details button {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border: 0;
+  width: 50%;
+  font-size: 20px;
+  font-weight: 500;
+  color: #00abae;
+  border-radius: 10px;
+}
+main .book-session .session-container .booking-details img {
+  width: 50%;
+}
+/********************************************
+**********Media Screen
+********************************************/
+@media only screen and (max-width: 600px) {
+  main .book-session .session-container .image {
+    width: 90%;
+  }
+  main .book-session .session-container .booking-details {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main .book-session .session-container .booking-details span {
+    font-size: 37px;
+  }
+  main .book-session .session-container .booking-details button {
+    width: 90%;
+    margin: 1rem 0rem;
+  }
+}
+@media only screen and (max-width:950px) and (min-width:600px) {
+  main .book-session .session-container .booking-details button {
+    margin: 2rem 0rem;
+  }
+}
+/********************************************
+**********News Section
+********************************************/
+main .news-section .heading {
+  text-align: center;
+  margin: 2rem 0rem;
+  font-size: 2rem;
+}
+main .news-section .heading span {
+  color: #00abae;
+}
+main .news-section .news-channel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .news-section .news-channel img {
+  width: 130px;
+}
+/******************************************
+**********FAQ
+********************************************/
+main .faq {
+  margin: 2rem 0rem 0rem 0rem;
+  background-color: #f4f4f4;
+}
+main .faq .faq-container {
+  width: 70%;
+  margin: 2rem auto 0rem auto;
+}
+main .faq .faq-container .heading {
+  text-align: center;
+  padding: 4rem 0rem;
+  font-size: 2rem;
+}
+main .faq .faq-container .questions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+main .faq .faq-container .questions .question span {
+  font-size: 20px;
+  font-weight: 500;
+}
+main .faq .faq-container .questions .question p {
+  font-size: 15px;
+  color: #929c9e;
+}
+main .faq .faq-container .get-started {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+main .faq .faq-container .get-started img {
+  padding: 2rem 0rem;
+  width: 25%;
+}
+/******************************************
+**********Media Screen
+********************************************/
+@media only screen and (max-width: 600px) {
+  main .faq .faq-container {
+    width: 90%;
+  }
+  main .faq .faq-container .questions .question span {
+    font-size: 15px;
+  }
+  main .faq .faq-container .questions .question p {
+    font-size: 16px;
+  }
+  main .faq .faq-container .get-started img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+/****************************************
+**********FOOTER
+*****************************************/
+footer {
+  background-color: #303030;
+  color: #fff;
+}
+footer .footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .footer-container .social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  padding: 2rem 0rem;
+}
+footer .footer-container .social-links p {
+  font-size: 13px;
+}
+footer .footer-container .social-links .social-logos {
+  display: flex;
+  gap: 1rem;
+}
+footer .footer-container .quick-links .links-conatiner {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem 0rem;
+}
+footer .footer-container .quick-links .links-conatiner a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-container .quick-links .links-conatiner .page-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+footer .footer-container .quick-links .links-conatiner .student-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+footer .copyright {
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+}
+footer .copyright p {
+  padding: 2rem 0rem;
+  color: #e5e5e5;
+}
